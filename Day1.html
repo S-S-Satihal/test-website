@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Day 1</title>
+    <style>
+      body {
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+      }
+
+      h1 {
+        color: #2563eb;
+      }
+
+      button {
+        padding: 0.6rem 1rem;
+        border: 0;
+        border-radius: 0.4rem;
+        background: #2563eb;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>DevOps Day 1</h1>
+      <p>Today I’m starting my DevOps journey and learning how to use Git.</p>
+
+      <h2>Day 1 checklist</h2>
+      <ul>
+        <li>Create a project</li>
+        <li>Track changes with Git</li>
+        <li>Push the project to a remote repository</li>
+      </ul>
+
+      <button id="test-button" type="button">Test my page</button>
+      <p id="message" aria-live="polite">Ready to test.</p>
+    </main>
+
+    <script>
+      const button = document.querySelector("#test-button");
+      const message = document.querySelector("#message");
+
+      button.addEventListener("click", () => {
+        message.textContent = "Success! The page is working.";
+      });
+    </script>
+  </body>
+</html>
